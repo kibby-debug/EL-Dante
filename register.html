@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>EL Dante | Register</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Thee Hub</div>
+    <ul>
+        <li><a href="./register.html">Register</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./index.html">Home</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h1>Create Account</h1>
+
+        <form id="registerForm">
+            <label for="FullName">Full Name</label>
+            <input type="text" name="FullName" id="FullName" required>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email" required>
+
+            <label for="Interest">Interest</label>
+            <input type="text" name="Interest" id="Interest" required>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password" required>
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" name="ConfirmPassword" id="ConfirmPassword" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <p>Already have an account?
+            <a href="./login.html">Login</a>
+        </p>
+    </div>
+</div>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("This page is static. Registration is not processed on GitHub Pages.");
+});
+</script>
+
+</body>
+</html>
